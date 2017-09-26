@@ -1,0 +1,210 @@
+.exam_info_table_head, .content_row_num, .content_row_id , .content_row_id {
+   font-family: Arial;
+   color: #0A0A0A;
+   font-size: 14px;
+ }
+
+.content_row_effective_time, .content_row_daurtion, .content_row_creator {
+   font-family: Arial;
+   color: #5E5E5E;
+   font-size: 12px;
+ }
+ 
+.content_row_name a {
+    font-family: Arial;
+    color: #296793;
+    font-size: 12px;
+}
+ 
+.content {
+  width: 1280px;
+  height: 570px;
+  margin: 0 auto;
+  background-color: #D2DAE3;
+  padding-top: 30px;
+  position: relative;
+}
+
+.content_center {
+  position: relative;
+  width: 1240px;
+  height: 560px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #9D9D9D;
+}
+
+.content_center_left {
+  width: 200px;
+  height: 300px;
+  margin: 60px 0 0 0;
+}
+
+.content_center_left a {
+  width: 180px;
+  height: 30px;
+  display: block;
+  font-size: 14px;
+  font-family: Arial;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.exam_list_btn {
+  background-color: #2E4358;
+  color: #FFFFFF;
+}
+
+.create_exam_btn {
+  color: #2E4358;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #2E4358;
+}
+
+.outline {
+  height: 560px;
+  background-color: #9D9D9D;
+  width: 1px;
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+
+/* select style */
+.exam_select {
+  width: 180px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 228px;
+  border: 1px solid #296793;
+  border-radius: 3px;
+}
+
+.exam_search {
+  margin: 0;
+  width: 150px;
+  height: 28px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  padding-left: 4px;
+}
+
+.search_icon {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+}
+
+/* table style */
+.exam_info_table {
+  width: 980px;
+  height: 432px;
+  border-radius: 5px;
+  border: 1px solid #2E4358;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+
+.exam_info_table_head {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  border-bottom: 1px solid #2E4358;
+}
+
+.exam_info_table_head li, .content_ul li {
+  float: left;
+}
+
+.exam_info_table_head li {
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+
+.table_head_row_num , .content_row_num {
+  margin: 0 0 0 70px;
+  width: 18px;
+}
+
+.table_head_row_id, .content_row_id {
+  margin: 0 0 0 45px;
+  width: 58px;
+}
+
+.table_head_row_name, .content_row_name {
+  margin: 0 0 0 45px;
+  width: 100px;
+}
+
+.table_head_effective_time, .content_row_effective_time {
+  margin: 0 0 0 45px;
+  width: 100px;
+}
+
+.table_head_daurtion, .content_row_daurtion {
+  margin: 0 0 0 45px;
+  width: 110px;
+}
+
+.table_head_creator, .content_row_creator {
+  margin: 0 0 0 45px;
+  width: 70px;
+}
+
+.table_head_edit, .content_row_edit {
+  margin: 0 0 0 45px;
+  width: 32px;
+}
+
+.table_head_edit_select, .content_row_edit_select {
+  margin: 0 0 0 45px;
+  width: 32px;
+}
+
+.content_row_edit img, .content_row_edit_select img {
+  margin: 7px 0 0 0;
+}
+
+.table_head_edit_select img {
+  margin: 12px 0 0 0;
+}
+
+.content_ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #9D9D9D;
+}
+
+.content_ul li {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+}
+
+/* delete btn style */
+.delete_btn {
+  width: 80px;
+  height: 30px;
+  background: #FE9901;
+  position: absolute;
+  bottom: 25px;
+  right: 35px;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 14px;
+  outline: none;
+}

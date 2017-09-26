@@ -1,0 +1,5 @@
+D:\vs2010-workspace\OESClient\Contracts\bin\Debug\Contracts.dll
+D:\vs2010-workspace\OESClient\Contracts\bin\Debug\Contracts.pdb
+D:\vs2010-workspace\OESClient\Contracts\obj\Debug\ResolveAssemblyReference.cache
+D:\vs2010-workspace\OESClient\Contracts\obj\Debug\Contracts.dll
+D:\vs2010-workspace\OESClient\Contracts\obj\Debug\Contracts.pdb

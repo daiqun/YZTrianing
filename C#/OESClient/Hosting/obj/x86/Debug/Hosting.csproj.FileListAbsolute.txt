@@ -1,0 +1,12 @@
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\Hosting.exe.config
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\Hosting.exe
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\Hosting.pdb
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\Contracts.dll
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\Services.dll
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\DAL.dll
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\Contracts.pdb
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\Services.pdb
+D:\vs2010-workspace\OESClient\Hosting\bin\Debug\DAL.pdb
+D:\vs2010-workspace\OESClient\Hosting\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\vs2010-workspace\OESClient\Hosting\obj\x86\Debug\Hosting.exe
+D:\vs2010-workspace\OESClient\Hosting\obj\x86\Debug\Hosting.pdb

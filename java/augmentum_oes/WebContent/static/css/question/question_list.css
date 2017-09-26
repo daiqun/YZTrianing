@@ -1,0 +1,263 @@
+@CHARSET "UTF-8";
+
+ul {
+  list-style: none;
+}
+
+.mid {
+  width: 1280px;
+  height: 570px;
+  margin: 0 auto;
+  background-color: #D2DAE3;
+  padding-top: 30px;
+}
+
+.mid_content {
+  width: 1240px;
+  height: 560px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #9D9D9D;
+  position: relative;
+}
+
+.outline {
+  height: 560px;
+  background-color: #9D9D9D;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.pass_bar a {
+  font-family: Arial;
+  font-size: 12px;
+  color: #0A0A0A;
+}
+
+.current_bar a {
+  font-family: Arial;
+  font-size: 12px;
+  color: #5E5E5E;
+}
+
+.mid_content_left {
+  width: 200px;
+  height: 300px;
+  margin: 60px 0 0 0;
+}
+
+.mid_content_left a {
+  width: 180px;
+  height: 30px;
+  display: block;
+  font-size: 14px;
+  font-family: Arial;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.create_question {
+  color: #2E4358;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #2E4358;
+}
+
+.question_search {
+  width: 180px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  border: 1px solid #296793;
+  border-radius: 3px;
+}
+
+.question_text_search {
+  margin: 0;
+  width: 150px;
+  height: 28px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+}
+
+.descripe, .edit_qs, .select_all {
+  margin-top: 5px;
+}
+
+.sort_bt {
+  margin-top: 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.question_list {
+  background-color: #2E4358;
+  color: #FFFFFF;
+}
+
+::-webkit-input-placeholder {
+  color: #5E5E5E;
+  font-family: Arial;
+  font-size: 12px;
+  padding-left: 6px;
+}
+
+.search_icon {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+}
+
+.mid_content_right {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 980px;
+  height: 432px;
+  border-radius: 5px;
+  border: 1px solid #2E4358;
+}
+
+.content_head {
+  height: 40px;
+  border-bottom: 1px solid #2E4358;
+}
+
+.content,.content ol {
+  height: 30px;
+  border-bottom: 1px solid #9D9D9D;
+}
+
+.table_title {
+  background-color: #FFFFFF;
+  display: inline-block;
+  position: relative;
+  width: 960px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.content_head .table_title {
+  border-radius: 5px;
+}
+
+.content_head .table_title li {
+  height: 40px;
+}
+
+.content .table_title li {
+  height: 30px;
+}
+
+.table_title li {
+  float: left;
+  display: inline-block;
+}
+
+.table_title li a {
+  display: block;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.sort_style {
+  vertical-align: middle;
+}
+
+.content_head .table_title .question_description a {
+  font-family: Arial;
+  color: #0A0A0A;
+  font-size: 14px;
+}
+
+.question_id {
+  margin-left: 20px;
+  width: 40px;
+  text-align: center;
+}
+
+.question_id a {
+  font-family: Arial;
+  color: #0A0A0A;
+  font-size: 12px;
+}
+
+.question_title {
+  font-family: Arial;
+  color: #0A0A0A;
+  font-size: 14px;
+  margin-left: 40px;
+  width: 70px;
+  text-align: center;
+}
+
+.question_title a,.edit_question a {
+  font-family: Arial;
+  color: #0A0A0A;
+  font-size: 14px;
+}
+
+.question_description {
+  font-family: Arial;
+  color: #296793;
+  font-size: 12px;
+  margin-left: 90px;
+  width: 420px;
+  text-align: center;
+}
+
+.question_description a {
+  font-family: Arial;
+  color: #296793;
+  font-size: 12px;
+}
+
+.edit_question {
+  margin-left: 130px;
+  width: 30px;
+  text-align: center;
+}
+
+.is_select {
+  margin-left: 60px;
+  width: 20px;
+  text-align: center;
+}
+
+.question_content {
+  width: 980px;
+  height: 312px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.delete_btn {
+  width: 80px;
+  height: 30px;
+  background: #FE9901;
+  position: absolute;
+  bottom: 25px;
+  right: 35px;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 14px;
+  outline: none;
+}
+
+.content .question_description a {
+  text-align: left;
+}

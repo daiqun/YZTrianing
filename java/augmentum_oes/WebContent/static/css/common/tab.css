@@ -1,0 +1,43 @@
+.tab {
+  width: 1280px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.tab a {
+  display: inline-block;
+  height: 40px;
+  font-family: Arial;
+  color: #2E4358;
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.first_bar {
+  margin-left: 20px;
+  width: 211px;
+  background-color: #D2DAE3;
+}
+
+.second_bar {
+  margin-left: 64px;
+  width: 191px;
+  background-color: #FFFFFF;
+}
+
+.page_prompt {
+  width: 223px;
+  height: 30px;
+  background-color: orange;
+  font-family: Arial;
+  font-size: 14px;
+  color: #0A0A0A;
+  line-height: 30px;
+  position: absolute;
+  margin: 0 0 0 8%;
+  border-radius: 3px;
+  text-align: center;
+  display: none;
+  z-index: 100;
+}

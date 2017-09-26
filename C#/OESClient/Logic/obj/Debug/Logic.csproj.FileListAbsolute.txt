@@ -1,0 +1,12 @@
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\Logic.dll.config
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\Logic.dll
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\Logic.pdb
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\Services.dll
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\Contracts.dll
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\DAL.dll
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\Services.pdb
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\Contracts.pdb
+D:\vs2010-workspace\OESClient\Logic\bin\Debug\DAL.pdb
+D:\vs2010-workspace\OESClient\Logic\obj\Debug\ResolveAssemblyReference.cache
+D:\vs2010-workspace\OESClient\Logic\obj\Debug\Logic.dll
+D:\vs2010-workspace\OESClient\Logic\obj\Debug\Logic.pdb

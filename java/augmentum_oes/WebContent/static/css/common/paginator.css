@@ -1,0 +1,86 @@
+.page_bar {
+  width: 370px;
+  height: 23px;
+  position: absolute;
+  bottom: 30px;
+  left: 340px;
+}
+
+.front_page {
+  position: absolute;
+  bottom: 2px;
+}
+
+.next_page {
+  position: absolute;
+  bottom: 2px;
+  left: 117px;
+}
+
+.page_number_list {
+  position: absolute;
+  bottom: 1px;
+  left: 31px;
+}
+
+.page_number, .perpage_info {
+  font-family: Arial;
+  font-size: 12px;
+  color: #5E5E5E;
+}
+
+.page_number:HOVER {
+  color: #FE9901;
+}
+
+.select_page {
+  position: absolute;
+  bottom: 0px;
+  right: 192px;
+}
+
+.select_page select {
+  width: 30px;
+  height: 18px;
+  margin-bottom: 0;
+  border: 1px solid #5E5E5E;
+  font-size: 12px;
+  color: #FE9901;
+  font-family: Arial;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 6px;
+}
+
+.perpage_info {
+  position: absolute;
+  bottom: 1px;
+  right: 135px;
+}
+
+.page_input {
+  width: 25px;
+  height: 16px;
+  position: absolute;
+  bottom: 1px;
+  right: 95px;
+  border-radius: 3px;
+  border: 1px solid #5E5E5E;
+  padding-bottom: 2px;
+  outline: none;
+  text-align: center;
+}
+
+.go_btn {
+  position: absolute;
+  bottom: 1px;
+  right: 57px;
+  height: 17px;
+  border: 0;
+  width: 28px;
+  border-radius: 2px;
+  outline: none;
+  background-color: #FE9901;
+  color: white;
+}

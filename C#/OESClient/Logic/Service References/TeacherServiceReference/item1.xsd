@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TeacherSelect">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentPage" type="xs:int" />
+      <xs:element minOccurs="0" name="EndTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="StartTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TeacherSortDirction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeacherSortName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TeacherSelect" nillable="true" type="tns:TeacherSelect" />
+  <xs:complexType name="ArrayOfTeacherManage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TeacherManage" nillable="true" type="tns:TeacherManage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeacherManage" nillable="true" type="tns:ArrayOfTeacherManage" />
+  <xs:complexType name="TeacherManage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvgScore" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EffectiveTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExamName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExamineeCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="NumOfQualified" type="xs:int" />
+      <xs:element minOccurs="0" name="PassRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="QuestionQuantity" type="xs:int" />
+      <xs:element minOccurs="0" name="RowNumber" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TeacherManage" nillable="true" type="tns:TeacherManage" />
+  <xs:complexType name="ExamSelect">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExamId" type="xs:int" />
+      <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="SortFields" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SortWay" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExamSelect" nillable="true" type="tns:ExamSelect" />
+  <xs:complexType name="ArrayOfExamDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExamDetails" nillable="true" type="tns:ExamDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExamDetails" nillable="true" type="tns:ArrayOfExamDetails" />
+  <xs:complexType name="ExamDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExamScore" type="xs:int" />
+      <xs:element minOccurs="0" name="IsPass" type="xs:int" />
+      <xs:element minOccurs="0" name="PassCriteria" type="xs:int" />
+      <xs:element minOccurs="0" name="RowNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalScore" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExamDetails" nillable="true" type="tns:ExamDetails" />
+</xs:schema>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.augmentum.oes.model.dao.ExamDao">
+
+  <!-- User login info -->
+  <resultMap type="Exam" id="examMap">
+    <id column="id" property="id"/>
+    <result column="exam_name" property="examName" />
+    <result column="effective_time" property="effectiveTime" />
+    <result column="exam_duration" property="duration" />
+    <result column="create_by" property="createBy" />
+  </resultMap>
+
+  <!-- Create a exam -->
+  <insert id="create" parameterType="Exam" useGeneratedKeys="true" keyProperty="id">
+    <![CDATA[
+      INSERT INTO
+                  exam(exam_name, exam_description, effective_time, exam_duration, question_quantity, single_question_score, total_score, pass_criteria, create_time, update_time, create_by, update_by)
+      VALUES
+             (#{examName}, #{description}, #{effectiveTime}, #{duration}, #{questionQuantity}, #{questionPoints}, #{totalScore}, #{passCriteria}, NOW(), NOW(), #{createBy}, #{updateBy})
+    ]]>
+  </insert>
+
+  <!-- FindAll exam -->
+  <select id="findAll" resultMap="examMap">
+    <![CDATA[
+      SELECT
+             id, exam_name, effective_time, exam_duration, create_by
+      FROM
+           exam
+      WHERE
+            is_delete = 0;
+    ]]>
+  </select>
+</mapper>

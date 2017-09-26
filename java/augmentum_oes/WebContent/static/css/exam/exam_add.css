@@ -1,0 +1,231 @@
+ul li {
+  list-style: none;
+}
+
+ul li i {
+  color: #FE9901;
+  vertical-align: sub;
+}
+
+.navigation_bar_exam_manage {
+  font-family: Arial;
+  font-size: 12px;
+  color: #0A0A0A;
+}
+
+.create_and_cancel input {
+  font-family: Arial;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.exam_create_info li {
+  font-family: Arial;
+  font-size: 14px;
+  color: #0A0A0A;
+}
+
+.navigation_bar_create_exam {
+  font-family: Arial;
+  font-size: 12px;
+  color: #5E5E5E;
+}
+
+  .exam_settings input, .exam_duration_input, .datepicker_btn, .include_timepicker {
+    border: 1px solid #296793;
+    border-radius: 3px;
+    resize: none;
+    outline: none;
+    background-color: #FFFFFF;
+  }
+
+.content {
+  width: 1280px;
+  height: 570px;
+  margin: 0 auto;
+  background-color: #D2DAE3;
+  padding-top: 30px;
+  position: relative;
+}
+
+.content_center {
+  position: relative;
+  width: 1240px;
+  height: 560px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #9D9D9D;
+}
+
+.navigation_bar {
+  position: absolute;
+  top: 7px;
+  left: 24px;
+}
+
+.exam_create_info {
+  width: 800px;
+  height: 400px;
+  margin: 0 0 0 300px;
+  padding: 0;
+}
+
+.exam_create_info li {
+  width: 800px;
+  margin: 30px 0 0 0;
+  text-align: left;
+}
+
+.exam_create_info_create_name, .exam_create_info_effective, .exam_create_info_duration {
+  height: 30px;
+  line-height: 30px;
+}
+
+.exam_create_info_question_setting {
+  height: 80px;
+  position: relative;
+}
+
+.exam_create_info_description {
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+}
+
+.exam_name_input {
+  width: 500px;
+  height: 22px;
+  border: 1px solid #296793;
+  border-radius: 3px;
+  margin: 0 0 0 30px;
+}
+
+.exam_description_input {
+  margin: 0 0 0 52px;
+  width: 494px;
+  height: 54px;
+  resize: none;
+  outline: none;
+  border: 1px solid #296793;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.include_timepicker {
+  margin: 0 0 0 30px;
+}
+
+.exam_settings {
+  float: left;
+  width: 537px;
+  height: 80px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+}
+
+.exam_settings li {
+  width: 210px;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+}
+
+.exam_settings input {
+  width: 70px;
+  height: 26px;
+  float: right;
+  text-align: center;
+}
+
+.exam_settings .exam_settings_question_quantity {
+  margin: 0 0 0 20px;
+}
+
+.exam_settings .exam_settings_question_points {
+  margin:  0 0 0 40px;
+}
+
+.exam_settings .exam_settings_total_score {
+  margin: 20px 0 0 20px;
+}
+
+.exam_settings .exam_settings_pass_criteria {
+  margin: 20px 0 0 40px;
+}
+
+.create_and_cancel {
+  display: inline-block;
+  width: 380px;
+  height: 30px;
+  text-align: center;
+  margin: 0 0 0 450px;
+  padding: 0;
+}
+
+.create_and_cancel input {
+  width: 150px;
+  height: 30px;
+  background-color: #FE9901;
+  border-radius: 3px;
+  border: 0;
+  outline: none;
+}
+
+.cancel_btn {
+  margin: 0 0 0 30px;
+}
+
+.exam_duration_input {
+  width: 88px;
+  height: 29px;
+  margin: 0 0 0 60px;
+  display: inline-block;
+  position: relative;
+}
+
+.question_setting_lable {
+  margin: 6px 0 0 0;
+  display: inline-block;
+}
+
+.datepicker_btn {
+  margin: 0px 0 4px 60px;
+  width: 120px;
+  height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.include_timepicker {
+  width: 80px;
+  height: 29px;
+  display: inline-block;
+  position: relative;
+  padding: 5px 5px;
+}
+
+.exam_duration {
+  width: 55px;
+  height: 29px;
+  border: 0;
+  border-radius: 3px;
+  resize: none;
+  outline: none;
+  background-color: #FFFFFF;
+}
+
+.duration_pic {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  resize: none;
+  outline: none;
+  background: url("../../img/exam-img/ICN_Keep_12x20.png") no-repeat;
+}

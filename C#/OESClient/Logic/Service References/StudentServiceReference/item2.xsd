@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.rick.com/" elementFormDefault="qualified" targetNamespace="http://www.rick.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9005/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" />
+  <xs:element name="StudentExam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="studentSelect" nillable="true" type="q1:StudentSelect" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentExamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="StudentExamResult" nillable="true" type="q2:ArrayOfStudentExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentExamCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="studentSelect" nillable="true" type="q3:StudentSelect" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentExamCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StudentExamCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CurrenExam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="exam" nillable="true" type="q4:Exam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CurrenExamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="CurrenExamResult" nillable="true" type="q5:Exam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CurrentTesting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="testingContent" nillable="true" type="q6:TestingContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CurrentTestingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="CurrentTestingResult" nillable="true" type="q7:ArrayOfTestingContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddExamRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="examRecord" nillable="true" type="q8:ExamRecord" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddExamRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddExamRecordResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentExamNotice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="studentExam" nillable="true" type="q9:StudentExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentExamNoticeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="StudentExamNoticeResult" nillable="true" type="q10:ArrayOfExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TakeExamAbout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="examAbout" nillable="true" type="q11:ExamAbout" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TakeExamAboutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" minOccurs="0" name="TakeExamAboutResult" nillable="true" type="q12:ExamAbout" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

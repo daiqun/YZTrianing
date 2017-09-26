@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExamQuestionDataSet" targetNamespace="http://tempuri.org/ExamQuestionDataSet.xsd" xmlns:mstns="http://tempuri.org/ExamQuestionDataSet.xsd" xmlns="http://tempuri.org/ExamQuestionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExamQuestionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ExamQuestionDataSet" msprop:Generator_UserDSName="ExamQuestionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ExamQuestionList" msprop:Generator_TableClassName="ExamQuestionListDataTable" msprop:Generator_TableVarName="tableExamQuestionList" msprop:Generator_TablePropName="ExamQuestionList" msprop:Generator_RowDeletingName="ExamQuestionListRowDeleting" msprop:Generator_UserTableName="ExamQuestionList" msprop:Generator_RowChangingName="ExamQuestionListRowChanging" msprop:Generator_RowEvHandlerName="ExamQuestionListRowChangeEventHandler" msprop:Generator_RowDeletedName="ExamQuestionListRowDeleted" msprop:Generator_RowEvArgName="ExamQuestionListRowChangeEvent" msprop:Generator_RowChangedName="ExamQuestionListRowChanged" msprop:Generator_RowClassName="ExamQuestionListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionContent" msprop:Generator_ColumnVarNameInTable="columnQuestionContent" msprop:Generator_ColumnPropNameInRow="QuestionContent" msprop:Generator_ColumnPropNameInTable="QuestionContentColumn" msprop:Generator_UserColumnName="QuestionContent" type="xs:string" minOccurs="0" />
+              <xs:element name="ChoiceA" msprop:Generator_ColumnVarNameInTable="columnChoiceA" msprop:Generator_ColumnPropNameInRow="ChoiceA" msprop:Generator_ColumnPropNameInTable="ChoiceAColumn" msprop:Generator_UserColumnName="ChoiceA" type="xs:string" minOccurs="0" />
+              <xs:element name="ChoiceB" msprop:Generator_ColumnVarNameInTable="columnChoiceB" msprop:Generator_ColumnPropNameInRow="ChoiceB" msprop:Generator_ColumnPropNameInTable="ChoiceBColumn" msprop:Generator_UserColumnName="ChoiceB" type="xs:string" minOccurs="0" />
+              <xs:element name="ChoiceC" msprop:Generator_ColumnVarNameInTable="columnChoiceC" msprop:Generator_ColumnPropNameInRow="ChoiceC" msprop:Generator_ColumnPropNameInTable="ChoiceCColumn" msprop:Generator_UserColumnName="ChoiceC" type="xs:string" minOccurs="0" />
+              <xs:element name="ChoiceD" msprop:Generator_ColumnVarNameInTable="columnChoiceD" msprop:Generator_ColumnPropNameInRow="ChoiceD" msprop:Generator_ColumnPropNameInTable="ChoiceDColumn" msprop:Generator_UserColumnName="ChoiceD" type="xs:string" minOccurs="0" />
+              <xs:element name="CorrectAnwser" msprop:Generator_ColumnVarNameInTable="columnCorrectAnwser" msprop:Generator_ColumnPropNameInRow="CorrectAnwser" msprop:Generator_ColumnPropNameInTable="CorrectAnwserColumn" msprop:Generator_UserColumnName="CorrectAnwser" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

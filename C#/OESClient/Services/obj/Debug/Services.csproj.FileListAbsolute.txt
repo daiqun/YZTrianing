@@ -1,0 +1,9 @@
+D:\vs2010-workspace\OESClient\Services\bin\Debug\Services.dll
+D:\vs2010-workspace\OESClient\Services\bin\Debug\Services.pdb
+D:\vs2010-workspace\OESClient\Services\bin\Debug\Contracts.dll
+D:\vs2010-workspace\OESClient\Services\bin\Debug\DAL.dll
+D:\vs2010-workspace\OESClient\Services\bin\Debug\Contracts.pdb
+D:\vs2010-workspace\OESClient\Services\bin\Debug\DAL.pdb
+D:\vs2010-workspace\OESClient\Services\obj\Debug\ResolveAssemblyReference.cache
+D:\vs2010-workspace\OESClient\Services\obj\Debug\Services.dll
+D:\vs2010-workspace\OESClient\Services\obj\Debug\Services.pdb

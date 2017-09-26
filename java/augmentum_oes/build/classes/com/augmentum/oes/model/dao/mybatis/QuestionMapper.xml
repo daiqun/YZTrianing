@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.augmentum.oes.model.dao.QuestionDao">
+
+  <resultMap type="Question" id="questionMap">
+    <id column="id" property="id"/>
+    <result column="question_content" property="questionContent"/>
+    <result column="choice_A" property="choiceA"/>
+    <result column="choice_B" property="choiceB"/>
+    <result column="choice_C" property="choiceC"/>
+    <result column="choice_D" property="choiceD"/>
+    <result column="correct_anwser" property="correctAnwser"/>
+  </resultMap>
+
+  <sql id="questionInfo">
+    <![CDATA[
+      SELECT
+             id, question_content, choice_A, choice_B, choice_C, choice_D, correct_anwser
+      FROM
+             question
+      WHERE
+             is_delete = 0
+    ]]>
+  </sql>
+
+  <!-- Create a question -->
+  <insert id="create" parameterType="Question" useGeneratedKeys="true" keyProperty="id">
+    <![CDATA[
+      INSERT INTO
+                  question(user_id, question_content, choice_A, choice_B, choice_C, choice_D, correct_anwser, create_time, update_time, create_by, update_by)
+      VALUES
+             (#{userId}, #{questionContent}, #{choiceA}, #{choiceB}, #{choiceC}, #{choiceD}, #{correctAnwser}, NOW(), NOW(), #{createBy}, #{updateBy})
+    ]]>
+  </insert>
+
+  <!-- Delete question -->
+  <update id="delete" parameterType="Question">
+    <![CDATA[
+      UPDATE
+             question
+      SET
+          is_delete = 1
+      WHERE
+            id = #{id}
+    ]]>
+  </update>
+
+  <!-- Update question information -->
+  <update id="update" parameterType="Question">
+    <![CDATA[
+      UPDATE
+             question
+      SET
+          question_content = #{questionContent},
+          choice_A = #{choiceA},
+          choice_B = #{choiceB},
+          choice_C = #{choiceC},
+          choice_D = #{choiceD},
+          correct_anwser = #{correctAnwser},
+          update_time = NOW(),
+          update_by = #{updateBy}
+      WHERE
+            id = #{id}
+    ]]>
+  </update>
+
+  <!-- Find question by content -->
+  <select id="findByContent" resultMap="questionMap">
+    <include refid="questionInfo"/>
+
+    <if test="question.questionContent != '' and question.questionContent != null">
+      <![CDATA[
+        AND
+            question_content LIKE CONCAT(CONCAT('%', #{question.questionContent}), '%')
+        ESCAPE
+               '/'
+      ]]>
+    </if>
+
+    <if test="status == 'desc'">
+      <![CDATA[
+        ORDER BY id DESC
+      ]]>
+    </if>
+
+    <if test="status == 'asc'">
+      <![CDATA[
+        ORDER BY id ASC
+      ]]>
+    </if>
+
+    <if test="pagination.offset != null and pagination.pageSize != null">
+      <![CDATA[
+        LIMIT #{pagination.offset},#{pagination.pageSize}
+      ]]>
+    </if>
+  </select>
+
+  <!-- Get question by content -->
+  <select id="getByContent" parameterType="Question" resultType="int">
+    SELECT
+           COUNT(*)
+    FROM
+         question
+    WHERE
+          is_delete = 0
+    AND
+        question_content = #{questionContent}
+  </select>
+
+  <!-- Get question by id -->
+  <select id="getById" parameterType="Question" resultMap="questionMap">
+    <include refid="questionInfo"/>
+    AND id = #{id}
+  </select>
+
+  <!-- Select question count -->
+  <select id="getCount" resultType="int">
+    SELECT
+           COUNT(*)
+    FROM
+         question
+    WHERE
+          is_delete = 0
+    ESCAPE
+           '/'
+  </select>
+
+  <!-- Select question count by content -->
+  <select id="getCountByContent" parameterType="Question" resultType="int">
+    SELECT
+           COUNT(*)
+    FROM
+         question
+    WHERE
+          question_content
+    LIKE
+          CONCAT(CONCAT('%', #{questionContent}), '%')
+    ESCAPE
+           '/'
+    AND
+        is_delete = 0
+  </select>
+
+  <!-- Randomly query n questions -->
+  <select id="testPaper" parameterType="int" resultType="questionMap">
+    SELECT
+             id, question_content, choice_A, choice_B, choice_C, choice_D, correct_anwser
+    FROM
+         ( SELECT *, ROUND(RAND()) AS nc FROM `question` GROUP BY `id` )AS t 
+    ORDER BY
+             t.nc asc 
+    LIMIT
+          #{questionQuantity};
+  </select>
+</mapper>

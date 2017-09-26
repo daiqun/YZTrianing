@@ -1,0 +1,7 @@
+D:\vs2010-workspace\OESClient\OESDAL\bin\Debug\OESDAL.dll
+D:\vs2010-workspace\OESClient\OESDAL\bin\Debug\OESDAL.pdb
+D:\vs2010-workspace\OESClient\OESDAL\bin\Debug\Contracts.dll
+D:\vs2010-workspace\OESClient\OESDAL\bin\Debug\Contracts.pdb
+D:\vs2010-workspace\OESClient\OESDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\vs2010-workspace\OESClient\OESDAL\obj\Debug\OESDAL.dll
+D:\vs2010-workspace\OESClient\OESDAL\obj\Debug\OESDAL.pdb

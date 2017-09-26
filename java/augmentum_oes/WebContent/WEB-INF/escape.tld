@@ -1,0 +1,28 @@
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>escape TLD</short-name>
+  <tag>
+    <name>escape</name>
+    <tag-class>com.augmentum.common.taglib.CustomTag</tag-class>
+    <body-content>empty</body-content>
+
+    <attribute>
+      <name>content</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>keyword</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>date</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+</taglib>

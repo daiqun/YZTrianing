@@ -1,0 +1,1 @@
+D:\vs2010-workspace\OESClient\Services\obj\Debug\ResolveAssemblyReference.cache

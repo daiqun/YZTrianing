@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47B26D48-5BD4-4A0F-947B-61BEAF9E5DFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\QuestionTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom\QuestionTemplate.Designer.cs">
+      <DependentUpon>QuestionTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\StringUtil.cs" />
+    <Compile Include="Custom\RadiusBorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom\TextBorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataProcess\ExamDetailDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExamDetailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\ExamQuestionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExamQuestionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\StudentExamListDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentExamListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\TeacherManageDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeacherManageDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\AfterTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\AfterTest.Designer.cs">
+      <DependentUpon>AfterTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\ExamResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\ExamResult.Designer.cs">
+      <DependentUpon>ExamResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\FinishTimeIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\FinishTimeIn.Designer.cs">
+      <DependentUpon>FinishTimeIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\FinishTimeOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\FinishTimeOut.Designer.cs">
+      <DependentUpon>FinishTimeOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\MyExamList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\MyExamList.Designer.cs">
+      <DependentUpon>MyExamList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\StudentHome.Designer.cs">
+      <DependentUpon>StudentHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentPlat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\StudentPlat.Designer.cs">
+      <DependentUpon>StudentPlat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Testing.Designer.cs">
+      <DependentUpon>Testing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\ToExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\ToExam.Designer.cs">
+      <DependentUpon>ToExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\UserCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\UserCenter.Designer.cs">
+      <DependentUpon>UserCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\ExamDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\ExamDetail.Designer.cs">
+      <DependentUpon>ExamDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\ExamList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teacher\ExamList.Designer.cs">
+      <DependentUpon>ExamList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\TeacherManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\TeacherManage.Designer.cs">
+      <DependentUpon>TeacherManage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Custom\QuestionTemplate.resx">
+      <DependentUpon>QuestionTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Student\AfterTest.resx">
+      <DependentUpon>AfterTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\ExamResult.resx">
+      <DependentUpon>ExamResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\FinishTimeIn.resx">
+      <DependentUpon>FinishTimeIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\FinishTimeOut.resx">
+      <DependentUpon>FinishTimeOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\MyExamList.resx">
+      <DependentUpon>MyExamList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentHome.resx">
+      <DependentUpon>StudentHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentPlat.resx">
+      <DependentUpon>StudentPlat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Testing.resx">
+      <DependentUpon>Testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\ToExam.resx">
+      <DependentUpon>ToExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\UserCenter.resx">
+      <DependentUpon>UserCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\ExamDetail.resx">
+      <DependentUpon>ExamDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\ExamList.resx">
+      <DependentUpon>ExamList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\TeacherManage.resx">
+      <DependentUpon>TeacherManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataProcess\ExamDetailDataSet.xsc">
+      <DependentUpon>ExamDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataProcess\ExamDetailDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExamDetailDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataProcess\ExamDetailDataSet.xss">
+      <DependentUpon>ExamDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataProcess\ExamQuestionDataSet.xsc">
+      <DependentUpon>ExamQuestionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataProcess\ExamQuestionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExamQuestionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataProcess\ExamQuestionDataSet.xss">
+      <DependentUpon>ExamQuestionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataProcess\StudentExamListDataSet.xsc">
+      <DependentUpon>StudentExamListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataProcess\StudentExamListDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentExamListDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataProcess\StudentExamListDataSet.xss">
+      <DependentUpon>StudentExamListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataProcess\TeacherManageDataSet.xsc">
+      <DependentUpon>TeacherManageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataProcess\TeacherManageDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TeacherManageDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataProcess\TeacherManageDataSet.xss">
+      <DependentUpon>TeacherManageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Client.DataProcess.ExamDetailDataSet.datasource" />
+    <None Include="Properties\DataSources\Client.DataProcess.StudentExamListDataSet.datasource" />
+    <None Include="Properties\DataSources\Client.DataProcess.TeacherManageDataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTN_Close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTN_PageLeft_20x15.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTN_PageRight_20x15.png .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTN_RemeberMe_Select_12x12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTN_RemeberMe_Unselect_12X12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\head_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\head_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Client_Close_Program_21X21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Client_Close_Program_29X20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Client_Login_Wrong_20X20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Client_Max_Or_Normal_Program_22X22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Client_Min_Program_22X22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Client_PersonalInformation_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Client_PersonalInformation_20x201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Decrese_10x15.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Increase_10x15.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Password_20x15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Usename_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_Client_Login_40X300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_Client_Titel_120x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_Client_Titel_120x20_black.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_Client_Titel_120x201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username_show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{59749612-F94F-484A-9CF9-BCC9C915842B}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTN_Radio_Selected_16x16.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTN_Radio_Unselected_16x16.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Search_15x20.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Right_15x15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Wrong_15x15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_Avatar_130x110.png  .png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

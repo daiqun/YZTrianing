@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+  <tlib-version>1.2</tlib-version>
+  <short-name>myFunc</short-name>
+
+  <function>
+    <name>readCookie</name>
+    <function-class>com.augmentum.oes.util.CookieUtil</function-class>
+    <function-signature>com.augmentum.oes.util.CookieUtil readCookie() </function-signature>
+  </function>
+
+  <function>
+    <name>getPagePath</name>
+    <function-class>com.augmentum.oes.util.PropertiesUtil</function-class>
+    <function-signature>com.augmentum.oes.util.PropertiesUtil getStaticUrl()</function-signature>
+  </function>
+
+  <function>
+    <name>clearSession</name>
+    <function-class>com.augmentum.oes.util.SessionUtil</function-class>
+    <function-signature>com.augmentum.oes.util.SessionUtil removeSession(java.lang.String)</function-signature>
+  </function>
+</taglib>

@@ -1,0 +1,175 @@
+@CHARSET "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:HOVER {
+  color: #FE9901;
+}
+
+.top {
+  border-left: 1px solid #2E4358;
+  border-right: 1px solid #2E4358;
+  border-bottom: 1px solid #2E4358;
+  background-color: #FFFFFF;
+  width: 1280px;
+  height: 650px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.foot {
+  width: 1280px;
+  height: 110px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-left: 1px solid #2E4358;
+  border-right: 1px solid #2E4358;
+}
+
+.company_logo {
+  margin-left: 170px;
+  margin-top: 306px;
+}
+
+.login_info {
+  width: 400px;
+  height: 320px;
+  background-color: #2E4358;
+  position: absolute;
+  top: 150px;
+  right: 170px;
+  border-radius: 3px;
+}
+
+.logo_describe {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 30px;
+  color: #2E4358;
+  position: absolute;
+  top: 435px;
+  left: 170px;
+}
+
+.welcome_info {
+  font-family: Arial;
+  font-size: 24px;
+  color: #2E4358;
+  position: absolute;
+  top: 102px;
+  right: 376px;
+}
+
+.error_info {
+  font-family: Arial;
+  font-size: 12px;
+  color: #FF0000;
+  background-color: #FCCB9B;
+  line-height:21px;
+  width: 300px;
+  height: 21px;
+  margin: 30px 0 0 50px;
+  border-radius: 1px;
+  visibility: hidden;
+}
+
+.userName_info {
+  background-color: white;
+  width: 300px;
+  height: 33px;
+  margin: 10px 0 0 50px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.password_info {
+  background-color: white;
+  width: 300px;
+  height: 33px;
+  margin: 20px 0 0 50px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.login_bt {
+  border:0;
+  background-color: #FE9901;
+  width: 300px;
+  height: 35px;
+  margin: 20px 0 0 50px;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: Arial;
+  cursor:pointer;
+}
+
+.login_choice {
+  width: 300px;
+  height: 35px;
+  margin: 20px 0 0 50px;
+  font-family: Arial;
+  font-size: 12px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.remenber_me {
+  position: absolute;
+  top: -1px;
+  left: 21px;
+}
+
+.forget_pwd {
+  position:absolute;
+  top: -1px;
+  right: 0px;
+}
+
+.nameAndPwd_pic {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 18px;
+}
+
+.nameAndPwd {
+  left: 54px;
+  top: 3px;
+  position: absolute;
+  width: 200px;
+  height: 25px;
+  border: 0;
+  outline: none;
+}
+
+.rom_userInfo {
+  width: 100%;
+  position: relative;
+}
+
+.error_tab {
+  position: absolute;
+  top: 6px;
+  right: 23px;
+}
+
+.copyrightInfo {
+  font-family: Arial;
+  font-size: 12px;
+  color: #2E4358;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.error_tab {
+  visibility: hidden;
+}

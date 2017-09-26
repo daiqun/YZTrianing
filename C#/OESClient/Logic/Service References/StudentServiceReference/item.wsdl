@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.rick.com/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.rick.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.rick.com/Imports">
+      <xsd:import schemaLocation="http://localhost:9005/?xsd=xsd0" namespace="http://www.rick.com/" />
+      <xsd:import schemaLocation="http://localhost:9005/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9005/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Contracts.DataContracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStudentService_StudentExam_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudentExam" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_StudentExam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudentExamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_StudentExamCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudentExamCount" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_StudentExamCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudentExamCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_CurrenExam_InputMessage">
+    <wsdl:part name="parameters" element="tns:CurrenExam" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_CurrenExam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CurrenExamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_CurrentTesting_InputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentTesting" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_CurrentTesting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentTestingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_AddExamRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddExamRecord" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_AddExamRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddExamRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_StudentExamNotice_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudentExamNotice" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_StudentExamNotice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudentExamNoticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_TakeExamAbout_InputMessage">
+    <wsdl:part name="parameters" element="tns:TakeExamAbout" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_TakeExamAbout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TakeExamAboutResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IStudentService">
+    <wsdl:operation name="StudentExam">
+      <wsdl:input wsaw:Action="http://www.rick.com/IStudentService/StudentExam" message="tns:IStudentService_StudentExam_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.rick.com/IStudentService/StudentExamResponse" message="tns:IStudentService_StudentExam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StudentExamCount">
+      <wsdl:input wsaw:Action="http://www.rick.com/IStudentService/StudentExamCount" message="tns:IStudentService_StudentExamCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.rick.com/IStudentService/StudentExamCountResponse" message="tns:IStudentService_StudentExamCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CurrenExam">
+      <wsdl:input wsaw:Action="http://www.rick.com/IStudentService/CurrenExam" message="tns:IStudentService_CurrenExam_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.rick.com/IStudentService/CurrenExamResponse" message="tns:IStudentService_CurrenExam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CurrentTesting">
+      <wsdl:input wsaw:Action="http://www.rick.com/IStudentService/CurrentTesting" message="tns:IStudentService_CurrentTesting_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.rick.com/IStudentService/CurrentTestingResponse" message="tns:IStudentService_CurrentTesting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExamRecord">
+      <wsdl:input wsaw:Action="http://www.rick.com/IStudentService/AddExamRecord" message="tns:IStudentService_AddExamRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.rick.com/IStudentService/AddExamRecordResponse" message="tns:IStudentService_AddExamRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StudentExamNotice">
+      <wsdl:input wsaw:Action="http://www.rick.com/IStudentService/StudentExamNotice" message="tns:IStudentService_StudentExamNotice_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.rick.com/IStudentService/StudentExamNoticeResponse" message="tns:IStudentService_StudentExamNotice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TakeExamAbout">
+      <wsdl:input wsaw:Action="http://www.rick.com/IStudentService/TakeExamAbout" message="tns:IStudentService_TakeExamAbout_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.rick.com/IStudentService/TakeExamAboutResponse" message="tns:IStudentService_TakeExamAbout_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
